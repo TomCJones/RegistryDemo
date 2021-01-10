@@ -1,0 +1,14 @@
+﻿version: '3.4'
+
+services:
+  registrydemo:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Staging
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=password
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/ASP.NET/Https/TrustRegistry.pfx
+    ports:
+      - "80"
+      - "443"
+    volumes:
+      - /ASP.NET/Https:/ASP.NET/Https
