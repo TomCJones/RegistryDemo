@@ -14,5 +14,9 @@
     </None>
     <None Include="docker-compose.yml" />
     <None Include=".dockerignore" />
+    <None Include="Production.sh" />
+    <None Include="production.yml" />
+    <None Include="Staging.sh" />
+    <None Include="staging.yml" />
   </ItemGroup>
 </Project>
