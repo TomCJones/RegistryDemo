@@ -30,7 +30,12 @@ namespace RegistryDemo
             Console.WriteLine("dbPath = " + dbPath);
             services.AddDbContext<SqliteDBContext>(options =>
                 options.UseSqlite(dbPath));
-            services.AddControllersWithViews();
+            services.AddControllersWithViews(options =>
+                options.CacheProfiles.Add("Default30",
+                    new Microsoft.AspNetCore.Mvc.CacheProfile()
+                    {
+                        Duration = 30
+                    }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
