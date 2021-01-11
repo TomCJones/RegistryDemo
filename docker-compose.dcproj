@@ -16,6 +16,7 @@
     <None Include=".dockerignore" />
     <None Include="Production.sh" />
     <None Include="production.yml" />
+    <None Include="README.md" />
     <None Include="Staging.sh" />
     <None Include="staging.yml" />
   </ItemGroup>
