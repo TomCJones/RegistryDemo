@@ -23,6 +23,15 @@ namespace RegistryDemo.Controllers
             return View();
         }
 
+        public IActionResult Resources()
+        {
+            return View();
+        }
+        public IActionResult HealthCare()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
