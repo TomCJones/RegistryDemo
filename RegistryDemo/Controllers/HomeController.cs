@@ -31,6 +31,14 @@ namespace RegistryDemo.Controllers
         {
             return View();
         }
+        public IActionResult Certification()
+        {
+            return View();
+        }
+        public IActionResult Instructions()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

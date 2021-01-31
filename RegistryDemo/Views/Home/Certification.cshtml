@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Certification";
+}
+
+<p>A description of the What, Where, When and, most importantly, the Why of Application Certification.</p>
+<div class="row">
+    <div class="col-md-4">
+        <h2 style="text-align:center">Why</h2>
+        <p>Certifications are needed to block attempts to  reuse the good results from one person for another that does not qualify.</p>
+        <p> Applications need certification.</p>
+        <ul>
+            <li>
+                The wiki page on <a href=" https://wiki.idesg.org/wiki/index.php/Patient_Choice">Patient Choice</a>
+                describes some of the actual patient experience with health care or similar apps. It should be quite clear that applicatons will not take much effort to protect users if they are not held accountable.
+            </li>
+            <li>The wiki on the <a href="https://wiki.idesg.org/wiki/index.php/Mobile_Driver%27s_License#Use_Cases"> Mobile Driver's License for use cases in Healthcare</a> provides more eveidence that if a driver's license claims to implement Real-ID, it also need some assurance that about security.</li>
+        </ul>
+        <p>Sources for Digital cerdential cards need certification.</p>
+        <ul>
+            <li>
+                The primary purpose of a Credentail Service Provider is the provision of certificates that can be trusted. For exmaple an HL7 report of a COVID-19 test is not in the form of a Verifiable Credetial and is not bound to a users digital identifer. The CSP does both.
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h2 style="text-align:center">What</h2>
+        <ul>
+            <li>First there needs to be a trust federation with a  Code of Conduct , such as <a href="https://www.carinalliance.com/our-work/trust-framework-and-code-of-conduct/">this one from the CARIN alliance.</a></li>
+            <li>That code of conduct needs to be reduces to a list of service criteria that can be used to evaluate the app.</li>
+            <li>Then a number of testing organizations need to be certified that can compare the app with the service criteria and issue a certificate of compliance.</li>
+            <li>The user experence design needs to describe a user journey that gives the user informed control of their own data. Test of user reaction both before and after deployment is needed to assure that the user understand the impact of their choices.</li>
+            <li>
+                The next stop is to allow phone apps to be able to validate them selves in a <a href="https://kantarainitiative.org/confluence/display/WT/Draft+Recommendations">Distributed Assurance Specification.</a>
+            </li>
+            <li>All of the above steps have been implemented in Healthcare IT already for the patient portals, so we have emperical evidence that it can be done and that it works.</li>
+            <li> The <a href="https://firstnet.gov/network/TT/firstnet-for-developers">FirstNet app development program</a> has implemented a simiar program for the first responder network that can server as a paradigm for this program.</li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h2 style="text-align:center">When</h2>
+        <ul>
+            <li>All apps need to be valided before they are deployed to public web stores so that user's can see which apps are certified before they are downloaded into the user's phone.</li>
+        </ul>
+        <h2 style="text-align:center">Where</h2>
+        <ul>
+            <li>Vist the <a asp-area="" asp-controller="Home" asp-action="Instructions">Instructions for getting applications certified.</a></li>
+            <li>Create an image of the code (for example an apk) and collect the supporting material inlcude the source depot for submisstion to the test laborary.</li>
+            <li>Submit the package to the test lab, expect a few questions to be answered and prepare for a local or remote review with the architects and developers.</li>
+            <li>The code for this web is is available at <a href="https://github.com/TomCJones/RegistryDemo">GitHub</a></li>
+            <li><a href="https://wiki.idesg.org/wiki/index.php/Health_Care_Profile">This Health Care Profile</a> is one of the Framework Profiles that will allow developers of code and user experience to determine if their systems are compliant with the framework.</li>
+        </ul>
+    </div>
+
+</div>
+
