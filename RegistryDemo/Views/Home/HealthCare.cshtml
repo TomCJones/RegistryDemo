@@ -5,31 +5,33 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Health Care Solutions</h2>
+<div><span style="font-size:160%;font-weight:500;margin-bottom:22px">Healthcare Solutions: </span>focused on the healthcare profile for the IDEF.</div>
 
 <div class="row">
     <div class="col-md-5">
         <h3>Patient Choice for better Outcomes</h3>
-        <p>Patients can bring any <a href="https://tcwiki.azurewebsites.net/index.php?title=Identifier">Identifier</a> that can be <a href="https://tcwiki.azurewebsites.net/index.php?title=Authentication">authenticated.</a> Or they can use one from any <a href="https://tcwiki.azurewebsites.net/index.php?title=Trusted_Third_Party">Trusted Third Party</a> that is part of the Health Care trust registry.</p>
+        <p>Patients can bring any <a href="https://tcwiki.azurewebsites.net/index.php?title=Identifier">Identifier</a> that can be <a href="https://tcwiki.azurewebsites.net/index.php?title=Authentication">authenticated.</a>
+            Or they can use one from any <a href="https://tcwiki.azurewebsites.net/index.php?title=Trusted_Third_Party">Trusted Third Party</a> that is part of the Health Care Trust Registry.</p>
         <p>
-            As patient information moves from one HIPAA covered entity's medical records onto a patient's computing device and potential onto some other HIPAA covered entity, there needs to be some assurance
-            to the patient that the software apps and services involved in the transfer operate with the best practices to protect the user's information.
+            As patient information moves from one HIPAA-covered entity's medical records onto a patient's computing device and potentially onto some other HIPAA-covered entity, there needs to be some assurance
+            to the patient that the software apps and services involved in the transfer operate with best practices, to protect the user's information.
         </p>
     </div>
 
     <div class="col-md-5">
         <h3>Trust Registry for Patient Choice</h3>
-        <ul>
-            <li>The Trust Registry exposes all certified enties with an API that allows the user access to each conformant web site. See the <a href="~/images/IDEFdata.json"> IDEF registry as JSON blob</a></li>
-            <li>Help the user understand their choices and lead them to source of a personal identifier.</li>
-            <li>Help the user find any and all sources of <a href="https://tcwiki.azurewebsites.net/index.php?title=PHI">Patient Health Information</a> by finding their <a href="https://tcwiki.azurewebsites.net/index.php?title=Medical_Records_Identifier">Medial Record Locators</a> </li>
-        </ul>
+        <p> The Trust Registry:</p>
+        <ol>
+            <li>Exposes all certified entities with an API that allows the user access to each conformant web site. See the <a href="~/images/IDEFdata.json"> IDEF registry as JSON blob</a></li>
+            <li>Helps the user understand their choices and lead them to source of a personal identifier.</li>
+            <li>Helps the user find any and all sources of <a href="https://tcwiki.azurewebsites.net/index.php?title=PHI">Patient Health Information</a> by finding their <a href="https://tcwiki.azurewebsites.net/index.php?title=Medical_Records_Identifier">Medical Record Locators</a> </li>
+        </ol>
     </div>
 </div><div class="row">
     <div class="col-md-5">
         <h3>Web App for Patient Choice</h3>
         <ul>
-            <li>A Web App (aka Progressive Web App or PWA) is simply a web site that can install a service worker as a home screen button with a cache of common resources to improve performance both on and off-line.</li>
+            <li>A Web App (aka Progressive Web App or PWA) is simply a web site that can install a service worker on the smartphone with a cache of common resources to improve performance both on and off-line.</li>
             <li>This Trust Registry site can be installed on the user's mobile computing device by the <span style="font-weight:bold">Add to Home Screen</span> feature <a asp-area="" asp-controller="Home" asp-action="About">of the browser.</a></li>
         </ul>
     </div>
@@ -37,8 +39,8 @@
     <div class="col-md-5">
         <h3>Native App for Patient Control</h3>
         <ul>
-            <li>A Native app has more control of the data stored on the user's device and can create a secure authenction protocol with any Identifier chosen by the user.</li>
-            <li>A Native app has cpmtrol over the keystore which is able to maintain the keying material in the secure enclave, or <a href="https://tcwiki.azurewebsites.net/index.php?title=Trusted_Third_Party">Trusted Execution Environment</a> of the computing device.</li>
+            <li>A Native app has more control of the data stored on the user's device and can create a secure authentication protocol with any Identifier chosen by the user.</li>
+            <li>A Native app has control over the keystore which is able to maintain the keying material in the secure enclave, or <a href="https://tcwiki.azurewebsites.net/index.php?title=Trusted_Third_Party">Trusted Execution Environment</a> of the computing device.</li>
         </ul>
     </div>
 </div>

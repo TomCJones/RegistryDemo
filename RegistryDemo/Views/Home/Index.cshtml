@@ -1,28 +1,25 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Trust Registry Home";
 }
 
 
 <div class="row">
     <div class="col-md-4">
-        <h2 style="text-align:center">Kantara Registry of Trusted Identifiers</h2>
-        <div> The current focus of this service is the provisioning of a <a href="https://kantarainitiative.org/download/kantara-mobile-assurance-statement/">Mobile Authentication Assurance Statement</a> initially for healthcare providers and for Mobile Driver's License user agent (wallet) applications.</div>
-        <hr style="color:grey">
+        <div style="  min-height: 75px; vertical-align: top;text-align: center; font-size: x-large; font-weight:700">Kantara Registry of Trusted Identifiers</div>
+        <div style="margin-bottom:5px"> The registry is designed for universal access to <a href="https://kantarainitiative.org/download/kantara-mobile-assurance-statement/">Mobile Authentication Assurance Statements</a> to allow healthcare (and other) providers to determine if the user's application is trustworthy.</div>
         <ul>
-            <li>Vist the <a asp-area="" asp-controller="Home" asp-action="HealthCare">Proposed Health Care Solution</a>, a demonstration of the IDEF <a href="https://wiki.idesg.org/wiki/index.php/Health_Care_Profile">Health Care Profile.</a></li>
-            <li><a href="https://kantarainitiative.org/confluence/display/healthidassurance/File+Lists?preview=/72581926/133366518/presentation%20to%20onc%20on%20identity.docx"> The Kantara Trust Framework: Identity Assurance for US Healthcare</a> comments prepared for the ONC call for input. It also lists out the Healthcare Identity principles.</li>
-            <li>Which makes clear that there is no <a href=" https://wiki.idesg.org/wiki/index.php/Patient_Choice">Patient Choice</a> if the patient app is not trustworthy!</li>
-            <li>Vist the <a asp-area="" asp-controller="Home" asp-action="Resources">Other Resources Page</a> on Trusted Identifies in Cyberspace.</li>
+            <li><a href="https://kantarainitiative.org/confluence/display/healthidassurance/File+Lists?preview=/72581926/133366518/presentation%20to%20onc%20on%20identity.docx"> The Kantara Trust Framework: Identity Assurance for US Healthcare</a>
+                  consists of comments prepared for the ONC call for input. It also lists out the Healthcare Identity principles.</li>
+            <li>Those comments make clear that there is no meaningful <a href=" https://wiki.idesg.org/wiki/index.php/Patient_Choice">Patient Choice</a> if the patient app is not trustworthy!</li>
+            <li>A secondary goal is that the use of a <a href="https://wiki.idesg.org/wiki/index.php/Mobile_Driver%27s_License_in_Healthcare">Mobile Driver's License in Healthcare</a> will be accepted with high assurance. </li>
+            <li>As well as a plan that any <a href="https://wiki.idesg.org/wiki/index.php/State_Issued_ID_for_Healthcare">State Issued ID for Healthcare</a> (for example a Medicaid card) is also accepted with high assurance. </li>
+            <li>Visit the <a asp-area="" asp-controller="Home" asp-action="HealthCare">Proposed Health Care Solution</a>, a demonstration of the IDEF <a href="https://wiki.idesg.org/wiki/index.php/Health_Care_Profile">Health Care Profile.</a></li>
         </ul>
-        <div style="width:100%; vertical-align:middle; font:500; text-align:center; height:auto; display:flex">
-            To access the demo API and see the same json data that a relying party web service is provided:
-        </div>
-        <div style="text-align:center">
-            <buttonv style="text-align:center" class="btn btn-block"><a href="~/registryquery"> Click here </a></buttonv>
-        </div>
+
     </div>
+
     <div class="col-md-4">
-        <h2 style="text-align:center">High Level Goals</h2>
+        <div style=" min-height: 75px; vertical-align: top; text-align: center; font-size: x-large; font-weight: 700">High Level Goals</div>
         To put the user in control with:
         <ul>
             <li>  Control of release or sharing of data. </li>
@@ -31,31 +28,33 @@
             <li>  Good User Experience so they know what to expect. </li>
             <li>  High availability wherever and whenever it is needed.</li>
         </ul>
-        For the relying party web site;
+        For the relying party web site
         <ul>
             <li>  User Retention and low user maintenance costs.  </li>
             <li>  Interoperability with other sites and methods </li>
             <li>  Proof of Compliance with all regulations. </li>
 
         </ul>
-        For the app developer;
+        For the app developer
         <ul>
-            <li>  Clear and measurable acceptance criteria.  </li>
+            <li>  Clear, measurable acceptance criteria.  </li>
             <li>  Multiple sources of certification. </li>
-            <li>  Improved acceptance of the app. </li>
+            <li>  Improve traction, retentions and growth of the app. </li>
 
         </ul>
     </div>
     <div class="col-md-4">
-        <h2 style="text-align:center">Problems Addressed</h2>
+        <div style=" min-height:75px;  vertical-align:top;    text-align: center;  font-size: x-large;  font-weight: 700">Problems Addressed</div>
         <ul>
-            <li>Users want to know if applications can be trusted with some of their their most private information.</li>
-            <li>Relying parties want to be able to prove that they have exercised due diligence before they release or change user private information</li>
-            <li>Users want to be assured that they can recover access to sites that hold their most private information</li>
-            <li>App developers and relying parties do not want to go through compliance checking with every combination.</li>
+            <li>Users want to know if applications can be trusted with some of their most private information.</li>
+            <li>Relying parties want to be able to prove that they have exercised due diligence before they release or change user private information.</li>
+            <li>Users want to be assured that they can recover access to sites that hold their most private information.</li>
+            <li>App developers and relying parties need a simple means to assure that apps certified can be immediately accepted at any provider.</li>
             <li> ** TBD **  App developers want to be able to choose their delivery platform between native and web apps.</li>
-            <li>Vist the <a asp-area="" asp-controller="Home" asp-action="Certification">Certification Page</a> on trusting application code.</li>
-        </ul>
+            <li>Visit the <a asp-area="" asp-controller="Home" asp-action="Resources">Other Resources Page</a> on Trusted Identifies in Cyberspace.</li>
+            <li>Next step is the <a asp-area="" asp-controller="Home" asp-action="Certification">Certificate</a> that is provisioned for the app.</li>
+        </ul>        
+
     </div>
 
 </div>
