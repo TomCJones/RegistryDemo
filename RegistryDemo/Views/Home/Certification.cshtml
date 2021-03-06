@@ -2,7 +2,7 @@
     ViewData["Title"] = "Certification";
 }
 
-<div><span style="font-size:160%;font-weight:500">Certification: </span>A description of the What, Where, When and, most importantly, the Why of Application Certification.</div>
+<div style="margin-bottom:8px"><span style="font-size:160%;font-weight:500">Certification: </span>A description of the What, Where, When and, most importantly, the Why of Application Certification.</div>
 <div class="row">
     <div class="col-md-4">
         <h2 style="text-align:center">Why</h2>
@@ -15,10 +15,13 @@
             </li>
             <li>The wiki on the <a href="https://wiki.idesg.org/wiki/index.php/Mobile_Driver%27s_License#Use_Cases"> Mobile Driver's License for use cases in Healthcare</a> provides more evidence that if a driver's license claims to implement Real-ID, it also needs assurance that it is secure.</li>
         </ul>
-        <p>Sources for Digital credential cards need certification.</p>
+        <p>Sources for Digital credential cards will also need certification.</p>
         <ul>
             <li>
-                The primary purpose of a Credential Service Provider (CSP) is the provision of certificates that can be trusted. For example an HL7 report of a COVID-19 test is not in the form of a Verifiable Credential and is not bound to a users digital identifier. The CSP does both.
+                The primary purpose of a Credential Service Provider (CSP or CP) is the provisioning of credentials or certificates that can be trusted.
+                For example an HL7 report of a COVID-19 test is not in the form of a Verifiable Credential and is not bound to a user’s digital identifier.
+                A CSP can be used to provide assertions for any identifier, attribute or authentication method.
+                These can be combined on the user's smartphone to create a token containing all necessary assertions for access.
             </li>
         </ul>
     </div>
@@ -32,7 +35,7 @@
             <li>
                 The next step is to allow phone apps to validate that they meet the criteria in a <a href="https://kantarainitiative.org/confluence/display/WT/Draft+Recommendations">Distributed Assurance Specification.</a>
             </li>
-            <li>All of the above steps have been implemented in Healthcare IT already for the patient portals, so we have emperical evidence that it can be done and that it works.</li>
+            <li>All of the above steps have been implemented in Healthcare IT already for the patient portals, so we have empirical evidence that it can be done and that it works.</li>
             <li> The <a href="https://firstnet.gov/network/TT/firstnet-for-developers">FirstNet app development program</a> has implemented a <a href="https://firstnet.gov/newsroom/blog/using-and-developing-apps-firstnet-next-phase-public-safety-communications">similar program for the first responder network</a> that can serve as a paradigm for this program.</li>
         </ul>
     </div>
@@ -49,7 +52,7 @@
             <li><a href="https://wiki.idesg.org/wiki/index.php/Health_Care_Profile">This Health Care Profile</a> is one of the Framework Profiles that will allow developers of code and user experience to determine if their systems are compliant with the framework.</li>
         </ul>
         <div style="width:100%;  font:500; text-align:left; height:auto; display:flex">
-            See the results from the API that a relying party web service will receive:
+            See the results from the API that a relying party web service will receive in raw json format:
         </div>
         <div style="text-align:center">
             <buttonv style="text-align:right" class="btn btn-block"><a href="~/registryquery"> Access the API output </a></buttonv>
