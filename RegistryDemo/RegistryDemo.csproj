@@ -6,6 +6,11 @@
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <Version>1.0.0.4</Version>
     <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <AssemblyVersion>1.0.0.5</AssemblyVersion>
+    <FileVersion>1.0.0.5</FileVersion>
+    <Copyright>2021 tom jones</Copyright>
+    <PackageProjectUrl>https://github.com/TomCJones/RegistryDemo</PackageProjectUrl>
+    <PackageReleaseNotes>Build for a docker image running on Digital Ocean.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
