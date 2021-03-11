@@ -1,12 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
+﻿// RegistryQueyrController.cs  copyright 2012 tomjones
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using RegistryDemo.Models;
 using static RegistryDemo.Models.JsonHelpers;
 
@@ -18,10 +20,6 @@ namespace RegistryDemo.Controllers
     public class RegistryQueryController : ControllerBase
     {
         private SqliteDBContext _dbContext;
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
 
         private readonly ILogger<RegistryQueryController> _logger;
 
@@ -63,11 +61,9 @@ namespace RegistryDemo.Controllers
                     Trust_registry = maas.trust_registry
                 };
                 context.Add(ro);
-                string bar = "foo";
             }
             context.SaveChanges();
             Console.WriteLine("Completed Creation of base Registered Objtecs");
-            string foo = "bar";
         }
         // Controller action return types in ASP.NET Core web API  https://docs.microsoft.com/en-us/aspnet/core/web-api/action-return-types?view=aspnetcore-5.0
         [HttpGet]
