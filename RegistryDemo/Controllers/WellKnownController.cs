@@ -13,13 +13,15 @@ using Microsoft.Extensions.FileProviders;
 namespace RegistryDemo.Controllers
 {
     [ApiController]
-    [Route(".well-known")]
+    [Route(".well-known/")]
+    [Route(".well-known/acme-challenge/{balance?}")]
     public class WellKnownController : ControllerBase
     {
         [HttpGet]
-        public async Task<string> Get()
+        public async Task<string> Get(string? balance)
         {
             //default response
+            string foo = balance;
             string path = "/app/wwwroot/TextDocument.txt";
             /*
             if (part.StartsWith("/.well-known", StringComparison.OrdinalIgnoreCase))
