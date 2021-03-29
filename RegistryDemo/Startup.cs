@@ -6,12 +6,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
-using RegistryDemo.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using RegistryDemo.Models;
 
 namespace RegistryDemo
 {
@@ -67,7 +67,7 @@ namespace RegistryDemo
             {
                 app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-        //        app.UseHsts();
+                app.UseHsts();
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
