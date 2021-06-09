@@ -45,6 +45,11 @@ namespace RegistryDemo.Controllers
             return View();
         }
 
+        public IActionResult Principles()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
