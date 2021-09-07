@@ -12,8 +12,10 @@ using Microsoft.Extensions.FileProviders;
 
 namespace RegistryDemo.Controllers
 {
+    /// <summary>
+    /// This is the code to enable let's encrypto to find the challange
+    /// </summary>
     [ApiController]
-    [Route(".well-known/")]
     [Route(".well-known/acme-challenge/{balance?}")]
     public class WellKnownController : ControllerBase
     {
@@ -23,16 +25,11 @@ namespace RegistryDemo.Controllers
             //default response
             string foo = balance;
             string path = "/app/wwwroot/TextDocument.txt";
-            /*
-            if (part.StartsWith("/.well-known", StringComparison.OrdinalIgnoreCase))
+            if (!string.IsNullOrWhiteSpace(balance))
             {
-                path = "openid-configuration.json";
+                path = "/app/wwwroot/" + balance;
             }
-            if (part.StartsWith("/metadata", StringComparison.OrdinalIgnoreCase))
-            {
-                path = "metadata.json";
-            }
-            */
+
             string strOut;
             try
             {
@@ -52,7 +49,8 @@ namespace RegistryDemo.Controllers
             }
             catch (Exception ex)
             {
-                return "The page you are seeking could not be found, or could not be output. " + ex.Message;
+                //        return "The page you are seeking could not be found, or could not be output. " + ex.Message;
+                return "orKtkEuMVTa8bQoHpeN8n5MYWAusyDFBD1Rz4Y_HQ7s.R5Pdn5cwDU36dCaEUseg8k2-ykmZJIcv2F7ivAV_xgs";
             }
         }
         [HttpPost]
